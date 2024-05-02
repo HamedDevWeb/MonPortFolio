@@ -1,0 +1,57 @@
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/src/images/Design\ sans\ titre.png);
+  background-size: cover;
+  background-position: center;
+  .container {
+    padding: 10px 10%;
+    nav {
+      @include flexCenter;
+      .logo {
+        font-size: $baseSizeFont*4;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        span {
+          color: $primColor;
+          margin-top: 10px;
+        }
+      }
+      ul li {
+        display: inline-block;
+        margin: 10px 20px;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $textColor;
+          font-size: $baseSizeFont*2;
+          position: relative;
+          &::after{
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 2px;
+          background: $primColor;
+          left: 0;
+          bottom: -3px;
+          transition: 0.7s;   
+        }
+        &:hover::after{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .header-text{
+      margin-top: 20px;
+      font-size: $baseSizeFont*3;
+      h1{
+        font-size: $baseSizeFont*6;
+        margin-top: 33px;
+        span{
+          color: $primColor
+        }
+      }
+    }
+  }
+}

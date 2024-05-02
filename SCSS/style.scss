@@ -1,1 +1,10 @@
-@import '_reset.scss';
+@import './base/reset';
+@import './utils/mixins';
+@import './utils/variables';
+@import './layout/header';
+
+
+body{
+    background: black;
+    color: $textColor;
+}
