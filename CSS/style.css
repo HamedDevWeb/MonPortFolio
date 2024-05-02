@@ -112,6 +112,67 @@ table {
   color: #ff004f;
 }
 
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#about .row .about-col-1 {
+  flex-basis: 35%;
+}
+#about .row .about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+#about .row .about-col-2 {
+  flex-basis: 60%;
+}
+#about .row .about-col-2 .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+#about .row .about-col-2 .tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+#about .row .about-col-2 .tab-titles .tab-links {
+  margin-right: 20px;
+  font-style: 18px;
+  cursor: pointer;
+  position: relative;
+}
+#about .row .about-col-2 .tab-titles .tab-links::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #ff004f;
+  left: 0;
+  bottom: -8px;
+  transition: 0.7s;
+}
+#about .row .about-col-2 .tab-titles .active-link::after {
+  width: 50%;
+}
+#about .row .about-col-2 .tab-contents {
+  display: none;
+}
+#about .row .about-col-2 .tab-contents.active-tab {
+  display: block;
+}
+#about .row .about-col-2 .tab-contents ul li {
+  margin: 10px 0;
+}
+#about .row .about-col-2 .tab-contents ul li span {
+  color: #b54769;
+  font-size: 12px;
+}
+
 body {
   background: black;
   color: #fff;
