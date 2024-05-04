@@ -1,0 +1,75 @@
+// ------------ Contact Left -------------------------------------
+.container {
+  padding: 10px 10%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-left {
+  flex-basis: 35%;
+  p {
+    margin-top: 30px;
+    .svg-inline--fa {
+      color: #ff004f;
+      margin-right: 15px;
+      font-size: 25px;
+    }
+  }
+  .social-icons {
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      margin-right: 15px;
+      color: #ababab;
+      display: inline-block;
+      transition: transform 0.7;
+    }
+    a:hover {
+      color: $primColor;
+      transform: translateY(-5px);
+    }
+  }
+  .btn.btn2 {
+    @include btn;
+    &:hover {
+      @include btnHover;
+    }
+  }
+}
+
+// ------------ Contact Right -------------------------------------
+.contact-right {
+  flex-basis: 60%;
+  form {
+    width: 100%;
+    input,
+    textarea {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: #262626;
+      padding: 15px;
+      margin: 15px 0;
+      color: $textColor;
+      border-radius: 7px;
+    }
+
+    .btn3 {
+      @include btn;
+      background: none;
+      color: none;
+      &:hover {
+        @include btnHover;
+      }
+    }
+  }
+}
+.copyright {
+  padding: 30px;
+  text-align: center;
+  font-size: $baseSizeFont*1.5;
+  background:rgb(43, 39, 39);
+}
