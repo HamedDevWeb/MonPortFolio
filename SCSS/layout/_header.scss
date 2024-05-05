@@ -10,7 +10,7 @@
     nav {
       @include flexCenter;
       .logo {
-        font-size: $baseSizeFont*4;
+        font-size: $baseSizeFont * 4;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
         span {
@@ -25,36 +25,37 @@
         a {
           text-decoration: none;
           color: $textColor;
-          font-size: $baseSizeFont*2;
+          font-size: $baseSizeFont * 2;
           position: relative;
-          &::after{
-          position: absolute;
-          content: "";
-          width: 0%;
-          height: 2px;
-          background: $primColor;
-          left: 0;
-          bottom: -3px;
-          transition: 0.7s;   
-        }
-        &:hover::after{
+          &::after {
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: $primColor;
+            left: 0;
+            bottom: -3px;
+            transition: 0.7s;
+          }
+          &:hover::after {
             width: 100%;
           }
         }
       }
+
     }
-    .header-text{
+    .header-text {
       margin-top: 20px;
-      font-size: $baseSizeFont*3;
-      h1{
-        font-size: $baseSizeFont*6;
+      font-size: $baseSizeFont * 3;
+      h1 {
+        font-size: $baseSizeFont * 6;
         margin-top: 33px;
-        span{
-          color: $primColor
+        span {
+          color: $primColor;
         }
       }
     }
   }
 }
 
-// --------------- About Section ---------------------
+

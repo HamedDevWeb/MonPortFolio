@@ -398,6 +398,50 @@ table {
   background: rgb(43, 39, 39);
 }
 
+.fa-times,
+.fa-bars {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(/src/images/background_image2.png);
+  }
+  #header ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    height: 30vh;
+    z-index: 10;
+    border-radius: 10px;
+    padding-top: 50px;
+    transition: right 1.1s;
+  }
+  #header ul li {
+    display: block;
+    margin: 60px;
+  }
+  #header ul .fa-times {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  #header .container .header-text p {
+    margin-top: 15%;
+    font-size: 50px;
+  }
+  #header .container .header-text h1 {
+    font-size: 50px;
+    margin-top: 35px;
+  }
+  #header .fa-times,
+  #header .fa-bars {
+    display: block;
+  }
+}
 body {
   background: black;
   color: #fff;
