@@ -4,9 +4,10 @@
 @import './layout/header';
 @import './layout/about';
 @import './layout/services';
-@import './layout/portfolio';
 @import './layout/contact';
-@import './utils/responsive';
+@import './layout/portfolio';
+@import './utils/responsive/phone';
+
 
 
 body{
