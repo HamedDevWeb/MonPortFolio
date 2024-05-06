@@ -94,17 +94,38 @@
       @include subTitle;
     }
     .btn {
-        text-align: center;
-    display: block;
-    margin-top: 20px;
+      text-align: center;
+      display: block;
+      margin-top: 20px;
     }
   }
 
   // ------------- Services Section -----------------------------
-  #contact{
+  #contact {
     .row {
+      flex-direction: column;
+      .contact-left {
+        display: flex;
         flex-direction: column;
-    }
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .sub-title {
+        @include subTitle;
+        font-size: 60px;
 
+        border-radius: 5px;
+      }
+      p {
+        font-size: $baseSizeFont * 2.5;
+      }
+    }
+    form .btn3{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: -5px 15px;
+    }
   }
 }
