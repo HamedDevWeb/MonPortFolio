@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+       
+# service APACHE (coté serveur)
+  apache:
+    build: "./docker_apache"
+    ports:
+      - "8060:80"
+    volumes:
+      - ./app:/var/www/html
+      
