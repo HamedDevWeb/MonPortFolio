@@ -9,17 +9,29 @@
 }
 .contact-left {
   flex-basis: 35%;
+  margin-top: 30px;
+  font-family:$baseFamilyFont;
+ h2 {
+    font-size: $baseSizeFont * 3.5;
+    &:hover {
+      @include textHover;
+    }
+  }
+
   p {
     margin-top: 30px;
+    font-size: $baseSizeFont*2;
     .svg-inline--fa {
       color: #ff004f;
       margin-right: 15px;
-      font-size: 25px;
+      font-size: $baseSizeFont*2;
     }
   }
   .social-icons {
     margin-top: 30px;
+    margin-bottom: 30px;
     a {
+      font-size: $baseSizeFont * 2;
       text-decoration: none;
       font-size: 30px;
       margin-right: 15px;
@@ -29,11 +41,13 @@
     }
     a:hover {
       color: $primColor;
-      transform: translateY(-5px);
+      transition: 0.5s;
+      transform: translateY(-3px);
     }
   }
   .btn.btn2 {
     @include btn;
+    font-size: $baseSizeFont * 2;
     &:hover {
       @include btnHover;
     }
@@ -58,9 +72,10 @@
     }
 
     .btn3 {
+      font-size: $baseSizeFont * 2;
       @include btn;
       background: none;
-      color: none;
+      margin-left: 35%;
       &:hover {
         @include btnHover;
       }
@@ -70,6 +85,11 @@
 .copyright {
   padding: 30px;
   text-align: center;
-  font-size: $baseSizeFont*1.5;
+  font-size: $baseSizeFont*3;
   background:rgb(43, 39, 39);
+  p .fa-heart:hover {
+    color: red;
+    transition: 1s;
+    cursor:pointer;
+  }
 }

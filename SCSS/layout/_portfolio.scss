@@ -4,6 +4,7 @@
         padding: 10px 10%;
         .sub-title{
           font-size: $baseSizeFont*4;
+          font-family: $baseFamilyFont;
           &:hover {
             @include textHover;
           }
@@ -15,6 +16,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 20px;
+    font-family: $baseFamilyFont;
     .work {
       position: relative;
       border-radius: 15px;
@@ -79,6 +81,8 @@
   }
   .btn{
     @include btn;
+    font-family: $baseFamilyFont;
+    font-size: $baseSizeFont * 2;
     &:hover{
         @include btnHover;
     }

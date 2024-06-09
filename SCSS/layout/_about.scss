@@ -9,7 +9,9 @@
       flex-basis: 35%;
       img {
         width: 100%;
-        border-radius: 15px;
+        min-width: 370px;
+        height: 400px;
+        border-radius: 25px;
       }
     }
     .about-col-2 {
@@ -34,10 +36,11 @@
       //   --------------- Tabs Title ---------------------------------------------
       .tab-titles {
         display: flex;
-        margin: 20px 0 40px;
+        margin: 30px 0 25px;
         .tab-links {
           margin-right: 20px;
-          font-style: 18px;
+          font-family: $baseFamilyFont;
+          font-size: $baseSizeFont*2;
           cursor: pointer;
           position: relative;
           &::after {
@@ -63,10 +66,13 @@
         display: block;
       }
       .tab-contents ul li{
-        margin: 10px 0;
+        margin: 20px 0;
+        font-family: $baseFamilyFont;
         span{
             color: #b54769;
-            font-size: $baseSizeFont*1.1;
+            font-size: $baseSizeFont*2;
+
+            
         }
         }
     }

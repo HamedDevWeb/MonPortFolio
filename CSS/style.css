@@ -137,7 +137,9 @@ table {
 }
 #about .row .about-col-1 img {
   width: 100%;
-  border-radius: 15px;
+  min-width: 370px;
+  height: 400px;
+  border-radius: 25px;
 }
 #about .row .about-col-2 {
   flex-basis: 60%;
@@ -161,11 +163,12 @@ table {
 }
 #about .row .about-col-2 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 30px 0 25px;
 }
 #about .row .about-col-2 .tab-titles .tab-links {
   margin-right: 20px;
-  font-style: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
   cursor: pointer;
   position: relative;
 }
@@ -189,11 +192,12 @@ table {
   display: block;
 }
 #about .row .about-col-2 .tab-contents ul li {
-  margin: 10px 0;
+  margin: 20px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #about .row .about-col-2 .tab-contents ul li span {
   color: #b54769;
-  font-size: 11px;
+  font-size: 20px;
 }
 
 #services {
@@ -201,6 +205,7 @@ table {
 }
 #services .container .sub-title {
   font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #services .container .sub-title:hover {
   transition-duration: 0.9s;
@@ -229,17 +234,21 @@ table {
 }
 #services .container .services-list div h2 {
   font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 500;
   margin-bottom: 15px;
 }
 #services .container .services-list div p {
   margin-bottom: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #services .container .services-list div a {
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
   display: inline-block;
+  margin-top: 30px;
 }
 #services .container .services-list div:hover {
   background: #460e1f;
@@ -258,19 +267,33 @@ table {
 
 .contact-left {
   flex-basis: 35%;
+  margin-top: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.contact-left h2 {
+  font-size: 35px;
+}
+.contact-left h2:hover {
+  transition-duration: 0.9s;
+  color: #ff004f;
+  cursor: pointer;
+  animation: sca;
 }
 .contact-left p {
   margin-top: 30px;
+  font-size: 20px;
 }
 .contact-left p .svg-inline--fa {
   color: #ff004f;
   margin-right: 15px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .contact-left .social-icons {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .contact-left .social-icons a {
+  font-size: 20px;
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -280,7 +303,8 @@ table {
 }
 .contact-left .social-icons a:hover {
   color: rgba(230, 16, 84, 0.7411764706);
-  transform: translateY(-5px);
+  transition: 0.5s;
+  transform: translateY(-3px);
 }
 .contact-left .btn.btn2 {
   display: inline-block;
@@ -293,6 +317,7 @@ table {
   text-decoration: none;
   color: #fff;
   transition: transform 1.3s;
+  font-size: 20px;
 }
 .contact-left .btn.btn2:hover {
   cursor: pointer;
@@ -319,6 +344,7 @@ table {
   border-radius: 7px;
 }
 .contact-right form .btn3 {
+  font-size: 20px;
   display: inline-block;
   margin: 20px auto;
   width: -moz-fit-content;
@@ -330,7 +356,7 @@ table {
   color: #fff;
   transition: transform 1.3s;
   background: none;
-  color: none;
+  margin-left: 35%;
 }
 .contact-right form .btn3:hover {
   cursor: pointer;
@@ -342,8 +368,13 @@ table {
 .copyright {
   padding: 30px;
   text-align: center;
-  font-size: 15px;
+  font-size: 30px;
   background: rgb(43, 39, 39);
+}
+.copyright p .fa-heart:hover {
+  color: red;
+  transition: 1s;
+  cursor: pointer;
 }
 
 #portfolio {
@@ -354,6 +385,7 @@ table {
 }
 #portfolio .container .sub-title {
   font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #portfolio .container .sub-title:hover {
   transition-duration: 0.9s;
@@ -366,6 +398,7 @@ table {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #portfolio .work-list .work {
   position: relative;
@@ -438,6 +471,8 @@ table {
   text-decoration: none;
   color: #fff;
   transition: transform 1.3s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
 }
 #portfolio .btn:hover {
   cursor: pointer;
