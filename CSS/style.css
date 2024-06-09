@@ -55,7 +55,7 @@ table {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(/src/images/Design\ sans\ titre.png);
+  background-image: url(../../src/images/Design\ sans\ titre.png);
   background-size: cover;
   background-position: center;
 }
@@ -69,11 +69,11 @@ table {
   flex-wrap: wrap;
 }
 #header .container nav .logo {
-  font-size: 40px;
+  font-size: 70px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #header .container nav .logo span {
-  color: #ff004f;
+  color: rgba(230, 16, 84, 0.7411764706);
   margin-top: 10px;
 }
 #header .container nav ul li {
@@ -84,6 +84,7 @@ table {
 #header .container nav ul li a {
   text-decoration: none;
   color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   position: relative;
 }
@@ -92,7 +93,7 @@ table {
   content: "";
   width: 0%;
   height: 2px;
-  background: #ff004f;
+  background: rgba(230, 16, 84, 0.7411764706);
   left: 0;
   bottom: -3px;
   transition: 0.7s;
@@ -102,14 +103,24 @@ table {
 }
 #header .container .header-text {
   margin-top: 20px;
-  font-size: 30px;
+}
+#header .container .header-text p {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#header .container .header-text p:hover {
+  transition-duration: 0.9s;
+  color: #ff004f;
+  cursor: pointer;
+  animation: sca;
 }
 #header .container .header-text h1 {
-  font-size: 60px;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-top: 33px;
 }
 #header .container .header-text h1 span {
-  color: #ff004f;
+  color: rgba(230, 16, 84, 0.7411764706);
 }
 
 #about {
@@ -132,9 +143,21 @@ table {
   flex-basis: 60%;
 }
 #about .row .about-col-2 .sub-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+}
+#about .row .about-col-2 .sub-title:hover {
+  transition-duration: 0.9s;
+  color: #ff004f;
+  cursor: pointer;
+  animation: sca;
+}
+#about .row .about-col-2 p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
+  color: rgba(244, 236, 236, 0.837);
 }
 #about .row .about-col-2 .tab-titles {
   display: flex;
@@ -151,7 +174,7 @@ table {
   content: "";
   width: 0;
   height: 2px;
-  background: #ff004f;
+  background: rgba(230, 16, 84, 0.7411764706);
   left: 0;
   bottom: -8px;
   transition: 0.7s;
@@ -176,13 +199,22 @@ table {
 #services {
   padding: 30px 0;
 }
-#services .services-list {
+#services .container .sub-title {
+  font-size: 40px;
+}
+#services .container .sub-title:hover {
+  transition-duration: 0.9s;
+  color: #ff004f;
+  cursor: pointer;
+  animation: sca;
+}
+#services .container .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
-#services .services-list div {
+#services .container .services-list div {
   background: #222121;
   padding: 30px;
   font-size: 17px;
@@ -191,25 +223,25 @@ table {
   transition: background 0.7s, transform 0.5s;
   cursor: pointer;
 }
-#services .services-list div .svg-inline--fa {
+#services .container .services-list div .svg-inline--fa {
   font-size: 21px;
   margin-bottom: 30px;
 }
-#services .services-list div h2 {
+#services .container .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-#services .services-list div p {
+#services .container .services-list div p {
   margin-bottom: 20px;
 }
-#services .services-list div a {
+#services .container .services-list div a {
   text-decoration: none;
   color: #fff;
   font-size: 12px;
   display: inline-block;
 }
-#services .services-list div:hover {
+#services .container .services-list div:hover {
   background: #460e1f;
   transform: translateY(-10px);
 }
@@ -247,7 +279,7 @@ table {
   transition: transform 0.7;
 }
 .contact-left .social-icons a:hover {
-  color: #ff004f;
+  color: rgba(230, 16, 84, 0.7411764706);
   transform: translateY(-5px);
 }
 .contact-left .btn.btn2 {
@@ -264,8 +296,8 @@ table {
 }
 .contact-left .btn.btn2:hover {
   cursor: pointer;
-  background: #ff004f;
-  transform: scale(1.1);
+  background: rgba(230, 16, 84, 0.7411764706);
+  transition: 0.9s;
   font-weight: 300;
 }
 
@@ -302,8 +334,8 @@ table {
 }
 .contact-right form .btn3:hover {
   cursor: pointer;
-  background: #ff004f;
-  transform: scale(1.1);
+  background: rgba(230, 16, 84, 0.7411764706);
+  transition: 0.9s;
   font-weight: 300;
 }
 
@@ -320,11 +352,20 @@ table {
 #portfolio .container {
   padding: 10px 10%;
 }
+#portfolio .container .sub-title {
+  font-size: 40px;
+}
+#portfolio .container .sub-title:hover {
+  transition-duration: 0.9s;
+  color: #ff004f;
+  cursor: pointer;
+  animation: sca;
+}
 #portfolio .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #portfolio .work-list .work {
   position: relative;
@@ -369,7 +410,6 @@ table {
 }
 #portfolio .work-list .work .layer a {
   margin-top: 20px;
-  color: #ff004f;
   text-decoration: none;
   font-size: 18px;
   background: #fff;
@@ -381,6 +421,11 @@ table {
 }
 #portfolio .work-list .work:hover .layer {
   height: 100%;
+}
+#portfolio a {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 #portfolio .btn {
   display: inline-block;
@@ -396,8 +441,8 @@ table {
 }
 #portfolio .btn:hover {
   cursor: pointer;
-  background: #ff004f;
-  transform: scale(1.1);
+  background: rgba(230, 16, 84, 0.7411764706);
+  transition: 0.9s;
   font-weight: 300;
 }
 
@@ -408,10 +453,10 @@ table {
 
 @media only screen and (max-width: 768px) {
   #header {
-    background-image: url(/src/images/background_image2.png);
+    background-image: url(/src/images/background_image2.webp);
   }
   #header ul {
-    background: #ff004f;
+    background: rgba(230, 16, 84, 0.7411764706);
     position: fixed;
     top: 0;
     right: -150px;
@@ -487,7 +532,6 @@ table {
   }
   #portfolio .btn {
     text-align: center;
-    display: block;
     margin-top: 20px;
   }
   #contact .row {

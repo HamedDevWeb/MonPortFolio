@@ -21,11 +21,19 @@
 @mixin btnHover {
   cursor: pointer;
   background: $primColor;
-  transform: scale(1.1);
+  transition: 0.9s;
   font-weight: 300;
 }
 
 @mixin subTitle {
   font-size: $baseSizeFont * 5;
   text-align: center;
+}
+
+@mixin textHover {
+  transition-duration: 0.9s;
+    color: #ff004f;
+    cursor: pointer;
+    animation: sca;
+    
 }

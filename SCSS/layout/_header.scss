@@ -2,7 +2,7 @@
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(../../src/images/design.webp);
+  background-image: url(../../src/images/Design\ sans\ titre.png);
   background-size: cover;
   background-position: center;
   .container {
@@ -10,9 +10,10 @@
     nav {
       @include flexCenter;
       .logo {
-        font-size: $baseSizeFont * 4;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
+        font-size: $baseSizeFont * 7;
+        // font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        //   "Lucida Sans", Arial, sans-serif;
+        font-family: $baseFamilyFont;
         span {
           color: $primColor;
           margin-top: 10px;
@@ -25,6 +26,7 @@
         a {
           text-decoration: none;
           color: $textColor;
+          font-family: $baseFamilyFont;
           font-size: $baseSizeFont * 2;
           position: relative;
           &::after {
@@ -42,13 +44,19 @@
           }
         }
       }
-
     }
     .header-text {
       margin-top: 20px;
-      font-size: $baseSizeFont * 3;
+      p {
+        font-size: $baseSizeFont * 4;
+        font-family: $baseFamilyFont;
+        &:hover {
+          @include textHover;        
+        }
+      }
       h1 {
-        font-size: $baseSizeFont * 6;
+        font-size: $baseSizeFont * 5;
+        font-family: $baseFamilyFont;
         margin-top: 33px;
         span {
           color: $primColor;
@@ -57,5 +65,3 @@
     }
   }
 }
-
-

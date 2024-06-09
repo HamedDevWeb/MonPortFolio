@@ -15,10 +15,22 @@
     .about-col-2 {
       flex-basis: 60%;
       .sub-title {
+        font-family: $baseFamilyFont;
         font-size: $baseSizeFont * 6;
         font-weight: 600;
         color: $textColor;
+        &:hover {
+          @include textHover;
+        }
+        
+        
       }
+      p {
+        font-family: $baseFamilyFont;
+        font-size: $baseSizeFont * 1.7;
+        color: rgba(244, 236, 236, 0.837);
+      }
+      
       //   --------------- Tabs Title ---------------------------------------------
       .tab-titles {
         display: flex;

@@ -1,13 +1,20 @@
 #portfolio {
+  
     .container{
         padding: 10px 10%;
+        .sub-title{
+          font-size: $baseSizeFont*4;
+          &:hover {
+            @include textHover;
+          }
+        }
     }
   padding: 50px 0;
   .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
     .work {
       position: relative;
       border-radius: 15px;
@@ -49,7 +56,7 @@
         }
         a{
             margin-top: 20px;
-            color: #ff004f;
+            // color: #ff004f;
             text-decoration: none;
             font-size: 18px;
             background: #fff;
@@ -71,7 +78,6 @@
     transform: translate(-50%);
   }
   .btn{
-    
     @include btn;
     &:hover{
         @include btnHover;
